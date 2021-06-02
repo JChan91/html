@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Form Test</title>
+</head>
+
+<body>
+  <h1>레드향 주문</h1>
+
+  <form action="#">
+    <fieldset>
+      <legend>상품 선택</legend>
+
+      <div>
+        <label> 이름 <input name="name" autofocus required> </label>
+      </div>
+
+      <div>
+        <label> 아이디 <input type="text" name="id"></label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>배송 정보</legend>
+
+      <input name="txt" type="text">
+      <input name="pw" type="password">
+      <input name="email" type="email">
+      <input name="date" type="date">
+      <input name="color" type="color">
+    </fieldset>
+
+    <fieldset>
+      <legend>상품 선택</legend>
+
+      <label><input type="checkbox" name="ck" value="s_1" checked>GIFT1</label>
+      <label><input type="checkbox" name="ck" value="s_2">GIFT2</label>
+      <label><input type="checkbox" name="ck" value="s_3">GIFT3</label>
+      <label><input type="checkbox" name="ck" value="s_4">GIFT4</label>
+
+      <select name="url" size="5" multiple>
+        <option value="www.naver.com">NAVER</option>
+        <option value="www.google.com">Google</option>
+        <option value="www.daum.net">Daum</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>포장 선택</legend>
+
+      <label><input type="radio" name="gift" value="yes">선물 포장</label>
+      <label><input type="radio" name="gift" value="no">선물 포장 안함</label>
+
+      <h4>MEMO</h4>
+      <textarea name="memo" cols="30" rows="10"></textarea>
+
+      <div>
+        <input type="number" name="amount" min="1" max="10" step="2" value="1">
+        <input type="range" name="rg" min="1" max="100" step="10" value="1">
+        <input type="file" name="file">
+      </div>
+    </fieldset>
+
+    <input type="submit">
+    <input type="image" src="./images/1.gif" width="100px">
+    <input type="button" value="공지 사항 열기" onclick="window.open('order.html')">
+
+  </form>
+</body>
+
+</html>
